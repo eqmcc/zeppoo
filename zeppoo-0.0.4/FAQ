@@ -1,0 +1,71 @@
+------[ Why Zeppoo ? ]---------------------------------------------------------
+
+The original project was called Zeppo, but to make the name agree with the
+domain name, we have choosen Zeppoo.
+
+------[ Zeppoo doesn't work at home, is it normal? ]---------------------------
+
+Zeppoo is very dependent on architecture, currently it works on i386 and x86_64 
+architecture and only under Linux.
+
+For x86_64 you must used "-d /dev/mem -m" options.
+
+If your architecture is well, you can used options : "-d /dev/mem -m" to fix
+your problems.
+
+---[ It announces I have no problems, does this mean my machine is healthy? ]--
+
+We cannot ensure you that your system is not corrupted, but currently Zeppoo is
+one of the most reliable methods.
+
+------[ If my machine appears to be corrupted, what can I do ? ]---------------
+ 
+Reinstall your machine, update your patches and back up a new fingerprint.
+
+------[ Where should I save my fingerprint ? ]---------------------------------
+
+Put it in a safe place (out of your system(usb key, ...)) and encrypt it.
+
+------[ I have a kernel 2.4.X, does Zeppoo works on it ? ]---------------------
+
+Unfortunately not (only tasks), but a version supporting the 2.4.X will be 
+provided soon.
+
+------[ How do I use /dev/mem ? ]----------------------------------------------
+
+Use the option -d /dev/mem !!
+
+------[ Which System.map zeppoo uses by default ? ]----------------------------
+
+Zeppoo uses the System.map which correspond to the running kernel.
+"/boot/System.map + 'uname -r'"
+
+------[ That's not work on debian ??? ]----------------------------------------
+
+If you have somes probems on debian, maybe you have an AMD K7 kernel :
+  linux:~# uname -ar
+  Linux owned 2.6.16-2-k7 #1 Fri Aug 18 19:48:42 UTC 2006 i686 GNU/Linux
+
+If you a -k7 kernel, change it with :
+  linux:~# apt-cache search linux-image-2.6.* |grep x86
+  linux-headers-2.6.18-1-486 - Header files for Linux 2.6.18 on x86
+  linux-image-2.6-486 - Linux kernel 2.6 image on x86
+  linux-image-2.6.18-1-486 - Linux 2.6.18 image on x86
+  linux:~# apt-get install linux-image-2.6.18-1-486
+       
+------[ I have a Redhat or Ubuntu's default kernel ? ]-------------------------
+
+You must used "-r -d /dev/mem -m" options to patch the kernel on the fly.
+
+------[ Can i be notified when a new release will be available ? ]-------------
+
+Yes you can, please subscribe to the sourceforge mailing list page :
+	http://sourceforge.net/mail/?group_id=161362
+
+-------[ Can i contribute or make some remarks ? ]-----------------------------
+
+Yes of course, send us your mail to contact@zeppoo.net
+
+------[ I like your software, how can I help you ? ]---------------------------
+
+You can help us to finish the TODO and lend us materials :)

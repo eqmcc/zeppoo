@@ -1,0 +1,13 @@
+[#] Version 0.0.4
+	[+] Support Redhat, Ubuntu with -r option
+	[+] Use md5
+	[+] fix problem in walk_krstab with init_task to x86_64(\xff)
+	[+] amd64 support 
+	[+] add /proc/kallsyms
+	[+] fix problem with 2.6.17.X
+	[+] use uname
+[#] Version 0.0.3d
+	[+] check execution of a binary(execve, binfmt)
+	[+] add symbols verification(only execve)
+[#] Version 0.0.3c
+	[+] option -m to use mmap to resolve symbols

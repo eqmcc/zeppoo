@@ -1,0 +1,9 @@
+Here the TODO :
+	
+	- VFS hijack detection
+	- support of networks by using kernel memory
+	- add verification for jmp(forensic ?)
+	- gui
+	- support kernel 2.4 and new architecture
+	- add support of modules kernel
+	- add the checking of syscalls by measurement of time

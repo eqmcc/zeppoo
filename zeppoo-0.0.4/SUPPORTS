@@ -1,0 +1,15 @@
+This file contains which kernel and distribution we have tested. But fortunately
+it can works with others :p (feedbacks : contact@zeppoo.net)
+
+i386 :
+	- <= 2.6.18 (official) 
+	- Xen
+	- Gentoo 
+	- Debian
+	- Ubuntu 
+	- Redhat
+	- Suse
+x86_64 :
+	- <= 2.6.18
+	- Gentoo
+	- Ubuntu

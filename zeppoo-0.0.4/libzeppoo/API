@@ -1,0 +1,207 @@
+			[ API ZEPPOO ]
+
+[ EXTERNAL API ]
+
+
+[ GLOBAL ]
+
+void zeppoo_init(void);
+
+int zeppoo_valid_addr(unsigned long);
+void zeppoo_fatal(char *, ...);
+int zeppoo_search_jmp(unsigned long);
+
+[ MEMORY ]
+
+void zeppoo_init_memory(char *, int, int);
+
+int zeppoo_open_memory();
+int zeppoo_close_memory();
+int zeppoo_read_memory(unsigned long, void *, int);
+int zeppoo_fread_memory(unsigned long, void *, int);
+int zeppoo_write_memory(unsigned long, void *, int);
+int zeppoo_fwrite_memory(unsigned long, void *, int);
+
+[ VERSION ]
+
+void zeppoo_init_version(char *, char *);
+
+[ SYMBOLS ]
+
+void zeppoo_init_symb(void);
+
+unsigned long zeppoo_lookup_root(void);
+unsigned long zeppoo_find_init_task(void);
+
+unsigned long zeppoo_walk_tree(pKernelSym *);
+unsigned long zeppoo_walk_krstab(char *, void *, int);
+void zeppoo_resolve_listsymbols(pKernelSyms []);
+int zeppoo_get_symbols(FILE *file);
+
+[ TASKS ]
+
+void zeppoo_init_task(void);
+void zeppoo_init_taskInfo(void);
+
+void zeppoo_get_tasks(pTable *);
+int zeppoo_get_task(int, pTask *);
+
+[ SYSCALLS ]
+
+void zeppoo_init_syscalls(void);
+
+unsigned long zeppoo_get_syscall(int);
+int zeppoo_get_syscalls(pTable *);
+int zeppoo_get_syscalls_md5sum(pTable *);
+int zeppoo_resolve_syscalls(pTable *, char *);
+
+[ IDT ]
+
+void zeppoo_init_idt(void);
+
+int zeppoo_get_idt(pTable *);
+int zeppoo_resolve_idt(pTable *, char *);
+int zeppoo_get_idt_md5sum(pTable *);
+
+[ VFS ]
+
+void zeppoo_init_vfs(void);
+
+void zeppoo_get_vfs(pTable *, char *);
+void zeppoo_get_vfs_md5sum(pTable *);
+void zeppoo_get_ext3(pSops *);
+
+[BINARIES]
+
+void zeppoo_init_binaries(void);
+void zeppoo_init_binaries_trace(int);
+
+void zeppoo_binary_attach(struct binary *);
+void zeppoo_binary_detach(struct binary *);
+void zeppoo_binary_read(struct binary *, unsigned long, void *, size_t);
+void zeppoo_locate_linkmap(struct binary *);
+void zeppoo_resolv_tables(struct binary *);
+unsigned long zeppoo_find_sym_in_tables(struct binary *, char *);
+
+
+void zeppoo_get_binfmt(pTask *);
+void zeppoo_get_binfmts(pTable *);
+void zeppoo_get_binfmts_md5sum(pTable *);
+void zeppoo_get_binfmt_md5sum(pBinfmt *);
+int zeppoo_resolve_binfmts(pTable *, char *);
+
+/******************************************************************************/
+/******************************************************************************/
+
+[ INTERNAL API ]
+
+[ GLOBAL ]
+
+void get_opcodes(unsigned long, unsigned long *);
+int resolve(char *, unsigned long, char *, int);
+unsigned long rresolve(char *, char *);
+
+[ HASH ]
+
+pTable *hash_new(void (*)(void *));
+void hash_delete(pTable *);
+
+void hash_insert(pTable *, const void *, size_t, void *);
+void hash_remove(pTable *, const void *, size_t);
+
+pElement *hash_get(pTable *, const void *, size_t);
+
+[ MD5 ]
+
+void MD5Init( struct MD5Context * );
+void MD5Update( struct MD5Context *, unsigned char const *, unsigned );
+void MD5Final( unsigned char digest[ 16 ], struct MD5Context * );
+void MD5Transform( unsigned long buf[ 4 ], const unsigned char in[ 64 ] );
+void dumpmd5( char *, int, unsigned char md5buffer[ BUFSIZ ] );
+
+[ KMEM ]
+
+void init_kmem_k24(void);
+void init_kmem_k26(void);
+
+void openkmem_k24();
+void openkmem_k26();
+void closekmem();
+int readkmem(unsigned long, void *, int);
+int writekmem(unsigned long, void *, int);
+
+[ MEM ]
+
+void init_mem_k24(void);
+void init_mem_k26(void);
+
+void openmem();
+void closemem();
+int readmem(unsigned long, void *, int);
+int writemem(unsigned long, void *, int);
+
+[ SYMBOLS ]
+
+void init_symb_k26(void);
+void init_symb_k24(void);
+
+unsigned long lookup_root_k26(void);
+unsigned long find_init_task_k26(void);
+
+[ TASKS ]
+
+void init_task_k26(void);
+void init_task_k24(void);
+
+void init_taskInfo_k26(void);
+
+void get_tasks_k26(pTable *);
+int find_offset_next_k26(char *, size_t);
+int find_offset_name_k26(char *, size_t);
+int find_offset_list_k26(char *, size_t);
+int find_offset_binfmt_k26(char *, size_t);
+int find_offset_pid_k26(char *, size_t);
+int find_offset_uid_k26(char *, size_t);
+
+[ SYSCALLS ]
+
+void init_syscalls_kgeneric(void);
+
+unsigned long get_syscall_kgeneric(int);
+int get_syscalls_kgeneric(pTable *);
+int get_syscalls_md5sum_kgeneric(pTable *);
+int resolve_syscalls_kgeneric(pTable *, char *);
+
+[ IDT ]
+
+void init_idt_kgeneric(void);
+
+int get_idt_kgeneric(pTable *);
+int resolve_idt_kgeneric(pTable *, char *);
+int get_idt_md5sum_kgeneric(pTable *);
+
+[ VFS ]
+
+void init_vfs_k26(void);
+void init_vfs_k24(void);
+
+void get_vfs_k26(pTable *, char *);
+void get_vfs_md5sum_kgeneric(pTable *);
+void get_ext3_k26(pSops *);
+
+[ BINARIES ]
+
+void init_binaries_mem(void);
+void init_binaries_ptrace(void);
+void init_binaries_k26(void);
+void init_binaries_k24(void);
+
+void ptrace_attach(struct binary *);
+void ptrace_detach(struct binary *);
+void ptrace_read(struct binary *, unsigned long, void *, size_t);
+
+void get_binfmt_k26(pTask *);
+void get_binfmts_k26(pTable *);
+void get_binfmts_md5sum_kgeneric(pTable *);
+void get_binfmt_md5sum_kgeneric(pBinfmt *);
+int resolve_binfmts_kgeneric(pTable *, char *);

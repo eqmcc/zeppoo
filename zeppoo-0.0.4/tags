@@ -1,0 +1,457 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AMD64	Makefile	/^AMD64=no$/;"	m
+AMD64	libzeppoo/Makefile	/^AMD64=no$/;"	m
+BINARIES_H	binaries.h	24;"	d
+BUFBINFINGER	libzeppoo/zeppoo.h	224;"	d
+BUFIDTFINGER	libzeppoo/zeppoo.h	365;"	d
+BUFSYSFINGER	libzeppoo/zeppoo.h	321;"	d
+Binfmt	libzeppoo/zeppoo.h	/^struct Binfmt{$/;"	s
+CC	Makefile	/^CC = gcc$/;"	m
+CC	libzeppoo/Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^export CFLAGS=-Wall $(FLAGSDEBUG) $(FLAGSAMD64) -c$/;"	m
+CFLAGS	libzeppoo/Makefile	/^export CFLAGS=-Wall $(FLAGSDEBUG) $(FLAGSAMD64) -c -fPIC$/;"	m
+DEBUG	Makefile	/^DEBUG=no$/;"	m
+DEBUG	libzeppoo/Makefile	/^DEBUG=no$/;"	m
+DEFAULTSYSTEMMAP	libzeppoo/zeppoo.h	68;"	d
+DescIdt	libzeppoo/zeppoo.h	/^struct DescIdt {$/;"	s
+Element	libzeppoo/zeppoo.h	/^struct Element{$/;"	s
+F1	libzeppoo/md5.c	189;"	d	file:
+F2	libzeppoo/md5.c	190;"	d	file:
+F3	libzeppoo/md5.c	191;"	d	file:
+F4	libzeppoo/md5.c	192;"	d	file:
+FINGERPRINTS_H	fingerprints.h	24;"	d
+FLAGSAMD64	Makefile	/^	export FLAGSAMD64=-D_AMD64_$/;"	m
+FLAGSAMD64	libzeppoo/Makefile	/^	export FLAGSAMD64=-D_AMD64_$/;"	m
+FLAGSDEBUG	Makefile	/^	export FLAGSDEBUG=-D_DEBUG_$/;"	m
+FLAGSDEBUG	libzeppoo/Makefile	/^	export FLAGSDEBUG=-D_DEBUG_$/;"	m
+GET_32BIT_LSB_FIRST	libzeppoo/md5.c	66;"	d	file:
+IDT_H	idt.h	24;"	d
+Item	libzeppoo/zeppoo.h	/^struct Item {$/;"	s
+KERNEL24	libzeppoo/zeppoo.h	154;"	d
+KERNEL26	libzeppoo/zeppoo.h	153;"	d
+KERNEL_AMD64_END	libzeppoo/zeppoo.h	63;"	d
+KERNEL_AMD64_START	libzeppoo/zeppoo.h	62;"	d
+KERNEL_I386_END	libzeppoo/zeppoo.h	56;"	d
+KERNEL_I386_START	libzeppoo/zeppoo.h	55;"	d
+KEYSIZE	libzeppoo/zeppoo.h	106;"	d
+KernelSym	libzeppoo/zeppoo.h	/^struct KernelSym{$/;"	s
+KernelSyms	libzeppoo/zeppoo.h	/^struct KernelSyms{$/;"	s
+LENADDR	libzeppoo/zeppoo.h	49;"	d
+LENADDR	libzeppoo/zeppoo.h	51;"	d
+LIB_DIR	Makefile	/^LIB_DIR=libzeppoo$/;"	m
+MD5Context	libzeppoo/zeppoo.h	/^struct MD5Context {$/;"	s
+MD5Final	libzeppoo/md5.c	/^void MD5Final(unsigned char digest[16], struct MD5Context *ctx)$/;"	f
+MD5Init	libzeppoo/md5.c	/^void MD5Init(struct MD5Context *ctx)$/;"	f
+MD5STEP	libzeppoo/md5.c	195;"	d	file:
+MD5Transform	libzeppoo/md5.c	/^void MD5Transform(unsigned long buf[4], const unsigned char inext[64])$/;"	f
+MD5Update	libzeppoo/md5.c	/^void MD5Update(struct MD5Context *ctx, unsigned char const *buf, unsigned len)$/;"	f
+MYFLAGS	Makefile	/^MYFLAGS =$/;"	m
+NameBinfmt	libzeppoo/zeppoo.h	/^struct NameBinfmt{$/;"	s
+OBJECTS	Makefile	/^OBJECTS = main.o tasks.o syscalls.o idt.o symbols.o vfs.o binaries.o fingerprints.o$/;"	m
+OBJECTSLIB	libzeppoo/Makefile	/^OBJECTSLIB = zeppoo.o hash.o md5.o memory.o mem.o kmem.o version.o symbols.o tasks.o syscalls.o idt.o vfs.o binaries.o$/;"	m
+OBJECTSSRC	Makefile	/^OBJECTSSRC = main.c tasks.c syscalls.c idt.c symbols.c vfs.c binaries.c fingerprints.c$/;"	m
+OBJECTSSRC	libzeppoo/Makefile	/^OBJECTSSRC = zeppoo.c hash.c md5.c memory.c mem.c kmem.c version.c symbols.c tasks.c syscalls.c idt.c vfs.c binaries.c $/;"	m
+PAGE_AMD64_MAX	libzeppoo/zeppoo.h	66;"	d
+PAGE_AMD64_OFFSET	libzeppoo/zeppoo.h	65;"	d
+PAGE_I386_MAX	libzeppoo/zeppoo.h	59;"	d
+PAGE_I386_OFFSET	libzeppoo/zeppoo.h	58;"	d
+PROC_ROOT_INO	libzeppoo/zeppoo.h	398;"	d
+PROC_ROOT_MODE	libzeppoo/zeppoo.h	401;"	d
+PROC_ROOT_NAMELEN	libzeppoo/zeppoo.h	400;"	d
+PROC_ROOT_NOTHING	libzeppoo/zeppoo.h	399;"	d
+PUT_32BIT_LSB_FIRST	libzeppoo/md5.c	72;"	d	file:
+REDPATCH	main.c	38;"	d	file:
+SYMBOLS_H	symbols.h	24;"	d
+SYSCALLS_H	syscalls.h	24;"	d
+Sops	libzeppoo/zeppoo.h	/^struct Sops{$/;"	s
+Symbol	libzeppoo/zeppoo.h	/^struct Symbol{$/;"	s
+SymbolInfo	libzeppoo/zeppoo.h	/^struct SymbolInfo{$/;"	s
+Syscall	libzeppoo/zeppoo.h	/^struct Syscall{$/;"	s
+TASKS_H	tasks.h	24;"	d
+Table	libzeppoo/zeppoo.h	/^struct Table {$/;"	s
+Task	libzeppoo/zeppoo.h	/^struct Task{$/;"	s
+TaskInfo	libzeppoo/zeppoo.h	/^struct TaskInfo{$/;"	s
+VERSION	libzeppoo/zeppoo.h	69;"	d
+VFS_H	vfs.h	24;"	d
+Version	libzeppoo/zeppoo.h	/^struct Version {$/;"	s
+ZEPPOO_H	libzeppoo/zeppoo.h	24;"	d
+_GNU_SOURCE	binaries.h	26;"	d
+_GNU_SOURCE	libzeppoo/zeppoo.h	26;"	d
+_GNU_SOURCE	symbols.h	26;"	d
+_LARGEFILE64_SOURCE	libzeppoo/kmem.c	23;"	d	file:
+_LARGEFILE64_SOURCE	libzeppoo/mem.c	23;"	d	file:
+_NR_syscalls	libzeppoo/zeppoo.h	72;"	d
+addr	libzeppoo/zeppoo.h	/^	unsigned long addr;$/;"	m	struct:Symbol
+addr	libzeppoo/zeppoo.h	/^	unsigned long addr;$/;"	m	struct:Syscall
+addr	libzeppoo/zeppoo.h	/^	unsigned long addr;$/;"	m	struct:Task
+address	libzeppoo/zeppoo.h	/^	unsigned long address;$/;"	m	struct:KernelSym
+arc	libzeppoo/zeppoo.h	/^	int arc;$/;"	m	struct:Version
+archi	libzeppoo/zeppoo.h	/^	char archi[6];$/;"	m	struct:Version
+base	libzeppoo/zeppoo.h	/^	unsigned long base;$/;"	m	struct:__anon1
+base	libzeppoo/zeppoo.h	/^	unsigned long base;$/;"	m	struct:binary
+binaries	libzeppoo/zeppoo.h	/^struct binaries {$/;"	s
+binary	libzeppoo/zeppoo.h	/^struct binary {$/;"	s
+binfmt	libzeppoo/zeppoo.h	/^	int binfmt;$/;"	m	struct:offsets
+bits	libzeppoo/zeppoo.h	/^	unsigned long bits[ 2 ];$/;"	m	struct:MD5Context
+buf	libzeppoo/zeppoo.h	/^	unsigned long buf[ 4 ];$/;"	m	struct:MD5Context
+callee	libzeppoo/zeppoo.h	/^	char *callee;$/;"	m	struct:KernelSym
+caller	libzeppoo/zeppoo.h	/^	char *caller;$/;"	m	struct:KernelSym
+checkBinfmt	binaries.c	/^void checkBinfmt(pTable *linuxformats, pTable *check){$/;"	f
+checkBinfmtTask	binaries.c	/^pBinfmt *checkBinfmtTask(pTask *tmptask, pTable *linuxformats){$/;"	f
+checkFingerprints	fingerprints.c	/^int checkFingerprints(char *file, char *mapfile){$/;"	f
+checkTasks	tasks.c	/^void checkTasks(pTable *ref, pTable *cmp, pTable *check){$/;"	f
+closekmem	libzeppoo/kmem.c	/^void closekmem(int mode){$/;"	f
+closemem	libzeppoo/mem.c	/^void closemem(){$/;"	f
+copyBinfmt	binaries.c	/^void copyBinfmt(pBinfmt *source, pBinfmt *dest){$/;"	f
+core_dump	libzeppoo/zeppoo.h	/^	unsigned long core_dump;$/;"	m	struct:Binfmt
+current	libzeppoo/zeppoo.h	/^	struct Item *first, *last, *current;$/;"	m	struct:Table	typeref:struct:Table::
+deletedot	libzeppoo/version.c	/^float deletedot(char *chaine, size_t size){$/;"	f
+doFingerprints	fingerprints.c	/^int doFingerprints(char *file, char *mapfile){$/;"	f
+dumpmd5	libzeppoo/md5.c	/^dumpmd5( char * pass, int value, $/;"	f
+el	libzeppoo/zeppoo.h	/^	struct Element *el;$/;"	m	struct:Item	typeref:struct:Item::Element
+elfHeader	libzeppoo/zeppoo.h	/^	Elf32_Ehdr elfHeader;$/;"	m	struct:elf_format
+elf_format	libzeppoo/zeppoo.h	/^struct elf_format {$/;"	s
+ext3dirop_sym	libzeppoo/vfs.c	/^pKernelSym ext3dirop_sym[] = {$/;"	v
+fd	libzeppoo/zeppoo.h	/^	int fd;$/;"	m	struct:binary
+fdmode	libzeppoo/zeppoo.h	/^int fdmode;$/;"	v
+find_init_task_k26	libzeppoo/symbols.c	/^unsigned long find_init_task_k26(void){$/;"	f
+find_offset_binfmt_k26	libzeppoo/tasks.c	/^int find_offset_binfmt_k26(char *buffer, size_t size){$/;"	f
+find_offset_list_k26	libzeppoo/tasks.c	/^int find_offset_list_k26(char *buffer, size_t size){$/;"	f
+find_offset_name_k26	libzeppoo/tasks.c	/^int find_offset_name_k26(char *buffer, size_t size){$/;"	f
+find_offset_next_k26	libzeppoo/tasks.c	/^int find_offset_next_k26(char *buffer, size_t size){$/;"	f
+find_offset_pid_k26	libzeppoo/tasks.c	/^int find_offset_pid_k26(char *buffer, size_t size){$/;"	f
+find_offset_uid_k26	libzeppoo/tasks.c	/^int find_offset_uid_k26(char *buffer, size_t size){$/;"	f
+first	libzeppoo/zeppoo.h	/^	struct Item *first, *last, *current;$/;"	m	struct:Table	typeref:struct:Table::Item
+first_addr	libzeppoo/zeppoo.h	/^	unsigned long first_addr;$/;"	m	struct:TaskInfo
+flags	libzeppoo/zeppoo.h	/^	unsigned char none,flags;$/;"	m	struct:__anon2
+flagsmode	libzeppoo/zeppoo.h	/^int flagsmode;$/;"	v
+fnv_32a_buf	libzeppoo/hash.c	/^unsigned long fnv_32a_buf(const void *buf, size_t size, unsigned long hval){$/;"	f
+format	libzeppoo/zeppoo.h	/^	unsigned long format;$/;"	m	struct:Binfmt
+format	libzeppoo/zeppoo.h	/^	void *format;$/;"	m	struct:binary
+free_binfmt	libzeppoo/binaries.c	/^void free_binfmt(pBinfmt *tmp){$/;"	f
+free_didt	libzeppoo/idt.c	/^void free_didt(pDescIdt *tmp){$/;"	f
+free_sops	libzeppoo/vfs.c	/^void free_sops(pSops *tmp){$/;"	f
+free_symb	symbols.c	/^void free_symb(pSymbol *tmp){$/;"	f
+free_syscall	libzeppoo/syscalls.c	/^void free_syscall(pSyscall *tmp){$/;"	f
+free_task	libzeppoo/tasks.c	/^void free_task(pTask *tmp){$/;"	f
+free_value	libzeppoo/zeppoo.h	/^	void (*free_value)(void *);$/;"	m	struct:Table
+fs_dir_operations	libzeppoo/zeppoo.h	/^	unsigned long fs_dir_operations;$/;"	m	struct:Sops
+fs_read_inodes	libzeppoo/zeppoo.h	/^	unsigned long fs_read_inodes;$/;"	m	struct:Sops
+fs_readdir	libzeppoo/zeppoo.h	/^	unsigned long fs_readdir;$/;"	m	struct:Sops
+fs_sops	libzeppoo/zeppoo.h	/^	unsigned long fs_sops;$/;"	m	struct:Sops
+getBinfmt	binaries.c	/^void getBinfmt(pTable *linuxformats, char *file){$/;"	f
+getBinfmtFinger	binaries.c	/^void getBinfmtFinger(unsigned long *value, char *name, char *md5, size_t size){$/;"	f
+getBinfmtFingerprints	binaries.c	/^void getBinfmtFingerprints(FILE *input, pTable *linuxformats){$/;"	f
+getIdtMemory	idt.c	/^void getIdtMemory(pTable *myidt, char *file){$/;"	f
+getInfo	tasks.c	/^int getInfo(char *file, pTable *mytasks, int rec) {$/;"	f
+getOther	tasks.c	/^int getOther(char *buffer, char *other, size_t lenbuffer, size_t lenother){$/;"	f
+getSymbolsFingerprints	symbols.c	/^void getSymbolsFingerprints(FILE *input, pTable *myallsymbs){$/;"	f
+getSyscallsMemory	syscalls.c	/^void getSyscallsMemory(pTable *mysyscalls, char *file){$/;"	f
+getTasksKill	tasks.c	/^int getTasksKill(pTable *mytasks){$/;"	f
+getTasksMemory	tasks.c	/^void getTasksMemory(pTable *mytasks){$/;"	f
+getTasksPS	tasks.c	/^int getTasksPS(pTable *mytasks){ $/;"	f
+getTasksProc	tasks.c	/^int getTasksProc(pTable *mytasks){$/;"	f
+getTasksProcForce	tasks.c	/^int getTasksProcForce(pTable *mytasks){$/;"	f
+getUidGid	tasks.c	/^int getUidGid(char *buffer, char *id, size_t lenbuffer, size_t lenid){$/;"	f
+getVFSMemory	vfs.c	/^void getVFSMemory(pTable *myvfs, char *file){$/;"	f
+get_addr	libzeppoo/mem.c	/^unsigned long get_addr(struct page_offset *tabpage, unsigned long addr){$/;"	f
+get_addr_idt	libzeppoo/idt.c	/^unsigned long get_addr_idt(void){$/;"	f
+get_binfmt_k26	libzeppoo/binaries.c	/^void get_binfmt_k26(pTask *mytask){$/;"	f
+get_binfmt_md5sum_kgeneric	libzeppoo/binaries.c	/^void get_binfmt_md5sum_kgeneric(pBinfmt *mybin){$/;"	f
+get_binfmts_k26	libzeppoo/binaries.c	/^void get_binfmts_k26(pTable *linuxformats){$/;"	f
+get_binfmts_md5sum_kgeneric	libzeppoo/binaries.c	/^void get_binfmts_md5sum_kgeneric(pTable *mybin){$/;"	f
+get_ext3_k26	libzeppoo/vfs.c	/^void get_ext3_k26(pSops *ext3fs){$/;"	f
+get_idt_kgeneric	libzeppoo/idt.c	/^int get_idt_kgeneric(pTable *myidt){$/;"	f
+get_idt_md5sum_kgeneric	libzeppoo/idt.c	/^void get_idt_md5sum_kgeneric(pDescIdt *myidt, char *buf, size_t size){$/;"	f
+get_opcodes	libzeppoo/zeppoo.c	/^void get_opcodes(unsigned long addr, unsigned long *tabopcodes){$/;"	f
+get_size_idt	libzeppoo/idt.c	/^unsigned short get_size_idt(void){$/;"	f
+get_syscall_kgeneric	libzeppoo/syscalls.c	/^unsigned long get_syscall_kgeneric(int num){$/;"	f
+get_syscall_md5sum_kgeneric	libzeppoo/syscalls.c	/^void get_syscall_md5sum_kgeneric(pSyscall *mysyscall, char *buf, size_t size){$/;"	f
+get_syscalls_kgeneric	libzeppoo/syscalls.c	/^int get_syscalls_kgeneric(pTable *mysyscalls){$/;"	f
+get_syscalltable_amd64	libzeppoo/syscalls.c	/^unsigned long get_syscalltable_amd64(void){$/;"	f
+get_syscalltable_i386	libzeppoo/syscalls.c	/^unsigned long get_syscalltable_i386(void){$/;"	f
+get_tasks_k26	libzeppoo/tasks.c	/^void get_tasks_k26(pTable *mytasks){$/;"	f
+get_tgid_list	libzeppoo/zeppoo.h	/^	char get_tgid_list;				$/;"	m	struct:symbol
+get_vfs_k26	libzeppoo/vfs.c	/^void get_vfs_k26(pTable *myvfs, char *file){$/;"	f
+get_vfs_md5sum_kgeneric	libzeppoo/vfs.c	/^void get_vfs_md5sum_kgeneric(pTable *myvfs){$/;"	f
+gid	libzeppoo/zeppoo.h	/^	int gid;$/;"	m	struct:Task
+global	libzeppoo/zeppoo.h	/^struct global {$/;"	s
+got	libzeppoo/zeppoo.h	/^	unsigned long got;$/;"	m	struct:elf_format
+hash_delete	libzeppoo/hash.c	/^void hash_delete(pTable *zhtable){$/;"	f
+hash_get	libzeppoo/hash.c	/^pElement *hash_get(pTable *zhtable, const void *key, size_t size){$/;"	f
+hash_insert	libzeppoo/hash.c	/^void hash_insert(pTable *zhtable, const void *key, size_t size, void *value){$/;"	f
+hash_new	libzeppoo/hash.c	/^pTable *hash_new(void (*free_value)(void *)){$/;"	f
+hash_remove	libzeppoo/hash.c	/^void hash_remove(pTable *zhtable, const void *key, size_t size){$/;"	f
+help	main.c	/^void help(char *name){$/;"	f
+hijack	libzeppoo/zeppoo.h	/^	int hijack;$/;"	m	struct:KernelSym
+hijack	libzeppoo/zeppoo.h	/^	int hijack;$/;"	m	struct:KernelSyms
+idt	libzeppoo/zeppoo.h	/^struct idt {$/;"	s
+idt	libzeppoo/zeppoo.h	/^} __attribute__ ((packed)) idt;$/;"	v	typeref:struct:__anon2
+idtr	libzeppoo/zeppoo.h	/^} __attribute__((packed)) idtr;$/;"	v	typeref:struct:__anon1
+image	libzeppoo/zeppoo.h	/^	char image[1024];$/;"	m	struct:binary
+imageSize	libzeppoo/zeppoo.h	/^	size_t imageSize;$/;"	m	struct:binary
+in	libzeppoo/zeppoo.h	/^	unsigned char in[ 64 ];$/;"	m	struct:MD5Context
+init_binaries_k24	libzeppoo/binaries.c	/^void init_binaries_k24(void){$/;"	f
+init_binaries_k26	libzeppoo/binaries.c	/^void init_binaries_k26(void){$/;"	f
+init_binaries_mem	libzeppoo/binaries.c	/^void init_binaries_mem(void){$/;"	f
+init_binaries_ptrace	libzeppoo/binaries.c	/^void init_binaries_ptrace(void){$/;"	f
+init_idt_kgeneric	libzeppoo/idt.c	/^void init_idt_kgeneric(void){$/;"	f
+init_kmem_k24	libzeppoo/kmem.c	/^void init_kmem_k24(){$/;"	f
+init_kmem_k26	libzeppoo/kmem.c	/^void init_kmem_k26(){$/;"	f
+init_mem_k24	libzeppoo/mem.c	/^void init_mem_k24(){$/;"	f
+init_mem_k26	libzeppoo/mem.c	/^void init_mem_k26(){$/;"	f
+init_symb_k24	libzeppoo/symbols.c	/^void init_symb_k24(void){$/;"	f
+init_symb_k26	libzeppoo/symbols.c	/^void init_symb_k26(void){$/;"	f
+init_syscalls_kgeneric	libzeppoo/syscalls.c	/^void init_syscalls_kgeneric(void){$/;"	f
+init_task	libzeppoo/zeppoo.h	/^	unsigned long init_task;$/;"	m	struct:TaskInfo
+init_taskInfo_k26	libzeppoo/tasks.c	/^void init_taskInfo_k26(void){$/;"	f
+init_tasks_k24	libzeppoo/tasks.c	/^void init_tasks_k24(void){$/;"	f
+init_tasks_k26	libzeppoo/tasks.c	/^void init_tasks_k26(void){$/;"	f
+init_vfs_k24	libzeppoo/vfs.c	/^void init_vfs_k24(void){$/;"	f
+init_vfs_k26	libzeppoo/vfs.c	/^void init_vfs_k26(void){$/;"	f
+inittask_sym	libzeppoo/symbols.c	/^pKernelSym inittask_sym[] = { $/;"	v
+kernel	libzeppoo/zeppoo.h	/^	float kernel;$/;"	m	struct:Version
+kernel_end	libzeppoo/zeppoo.h	/^	unsigned long kernel_end;$/;"	m	struct:global
+kernel_start	libzeppoo/zeppoo.h	/^	unsigned long kernel_start;$/;"	m	struct:global
+key	libzeppoo/zeppoo.h	/^	unsigned long key;$/;"	m	struct:Element
+ksym	libzeppoo/zeppoo.h	/^	pKernelSym *ksym;$/;"	m	struct:KernelSyms
+last	libzeppoo/zeppoo.h	/^	struct Item *first, *last, *current;$/;"	m	struct:Table	typeref:struct:Table::
+limit	libzeppoo/zeppoo.h	/^	unsigned short limit;$/;"	m	struct:__anon1
+list	libzeppoo/zeppoo.h	/^	int list;$/;"	m	struct:offsets
+lm	libzeppoo/zeppoo.h	/^	struct link_map lm;$/;"	m	struct:elf_format	typeref:struct:elf_format::link_map
+load_binary	libzeppoo/zeppoo.h	/^	unsigned long load_binary;$/;"	m	struct:Binfmt
+load_shlib	libzeppoo/zeppoo.h	/^	unsigned long load_shlib;$/;"	m	struct:Binfmt
+lookup_root_k26	libzeppoo/symbols.c	/^unsigned long lookup_root_k26(){$/;"	f
+main	main.c	/^int main(int argc, char *argv[]){$/;"	f
+mask	libzeppoo/zeppoo.h	/^	unsigned long mask;$/;"	m	struct:page_offset
+md5sum_coredump	libzeppoo/zeppoo.h	/^	char *md5sum_coredump;$/;"	m	struct:Binfmt
+md5sum_loadbinary	libzeppoo/zeppoo.h	/^	char *md5sum_loadbinary;$/;"	m	struct:Binfmt
+md5sum_loadshlib	libzeppoo/zeppoo.h	/^	char *md5sum_loadshlib;$/;"	m	struct:Binfmt
+md5sum_read_inodes	libzeppoo/zeppoo.h	/^	char md5sum_read_inodes[BUFIDTFINGER];$/;"	m	struct:Sops
+md5sum_readdir	libzeppoo/zeppoo.h	/^	char md5sum_readdir[BUFIDTFINGER];$/;"	m	struct:Sops
+mem	libzeppoo/zeppoo.h	/^int mem;$/;"	v
+memory	libzeppoo/zeppoo.h	/^struct memory {$/;"	s
+module	libzeppoo/zeppoo.h	/^	unsigned long module;$/;"	m	struct:Binfmt
+mybin_fmt	libzeppoo/zeppoo.h	/^	pBinfmt mybin_fmt;$/;"	m	struct:Task
+naddress	libzeppoo/zeppoo.h	/^	unsigned long naddress;$/;"	m	struct:KernelSym
+name	libzeppoo/zeppoo.h	/^	char *name;$/;"	m	struct:KernelSyms
+name	libzeppoo/zeppoo.h	/^	char name[16];$/;"	m	struct:Task
+name	libzeppoo/zeppoo.h	/^	char name[64];$/;"	m	struct:DescIdt
+name	libzeppoo/zeppoo.h	/^	char name[64];$/;"	m	struct:Sops
+name	libzeppoo/zeppoo.h	/^	char name[64];$/;"	m	struct:Symbol
+name	libzeppoo/zeppoo.h	/^	char name[64];$/;"	m	struct:Syscall
+name	libzeppoo/zeppoo.h	/^	int name;$/;"	m	struct:offsets
+name	libzeppoo/zeppoo.h	/^	pNameBinfmt *name;$/;"	m	struct:Binfmt
+name_core_dump	libzeppoo/zeppoo.h	/^	char name_core_dump[64];$/;"	m	struct:NameBinfmt
+name_format	libzeppoo/zeppoo.h	/^	char name_format[64];$/;"	m	struct:NameBinfmt
+name_load_binary	libzeppoo/zeppoo.h	/^	char name_load_binary[64];$/;"	m	struct:NameBinfmt
+name_load_shlib	libzeppoo/zeppoo.h	/^	char name_load_shlib[64];$/;"	m	struct:NameBinfmt
+name_module	libzeppoo/zeppoo.h	/^	char name_module[64];$/;"	m	struct:NameBinfmt
+name_next	libzeppoo/zeppoo.h	/^	char name_next[64];$/;"	m	struct:NameBinfmt
+nchains	libzeppoo/zeppoo.h	/^	int nchains;$/;"	m	struct:elf_format
+next	libzeppoo/zeppoo.h	/^	struct Item *next;$/;"	m	struct:Item	typeref:struct:Item::Item
+next	libzeppoo/zeppoo.h	/^	unsigned long next;$/;"	m	struct:Binfmt
+none	libzeppoo/zeppoo.h	/^	unsigned char none,flags;$/;"	m	struct:__anon2
+number	libzeppoo/zeppoo.h	/^	int number;$/;"	m	struct:KernelSym
+off1	libzeppoo/zeppoo.h	/^	unsigned short off1;$/;"	m	struct:__anon2
+off2	libzeppoo/zeppoo.h	/^	unsigned short off2;$/;"	m	struct:__anon2
+offset_binfmt	libzeppoo/zeppoo.h	/^	int offset_binfmt;$/;"	m	struct:TaskInfo
+offset_list	libzeppoo/zeppoo.h	/^	int offset_list;$/;"	m	struct:TaskInfo
+offset_list	libzeppoo/zeppoo.h	/^	int offset_list;$/;"	m	struct:task
+offset_name	libzeppoo/zeppoo.h	/^	int offset_name;$/;"	m	struct:TaskInfo
+offset_next	libzeppoo/zeppoo.h	/^	int offset_next;$/;"	m	struct:TaskInfo
+offset_pid	libzeppoo/zeppoo.h	/^	int offset_pid;$/;"	m	struct:TaskInfo
+offset_pid	libzeppoo/zeppoo.h	/^        int offset_pid;$/;"	m	struct:task
+offset_uid	libzeppoo/zeppoo.h	/^	int offset_uid;$/;"	m	struct:TaskInfo
+offset_uid	libzeppoo/zeppoo.h	/^	int offset_uid;$/;"	m	struct:task
+offsets	libzeppoo/zeppoo.h	/^struct offsets {$/;"	s
+openkmem_k24	libzeppoo/kmem.c	/^void openkmem_k24(int mode){$/;"	f
+openkmem_k26	libzeppoo/kmem.c	/^void openkmem_k26(){$/;"	f
+openmem	libzeppoo/mem.c	/^void openmem(){$/;"	f
+pBinfmt	libzeppoo/zeppoo.h	/^typedef struct Binfmt pBinfmt;$/;"	t	typeref:struct:Binfmt
+pDescIdt	libzeppoo/zeppoo.h	/^typedef struct DescIdt pDescIdt;$/;"	t	typeref:struct:DescIdt
+pElement	libzeppoo/zeppoo.h	/^typedef struct Element pElement;$/;"	t	typeref:struct:Element
+pItem	libzeppoo/zeppoo.h	/^typedef struct Item pItem;$/;"	t	typeref:struct:Item
+pKernelSym	libzeppoo/zeppoo.h	/^typedef struct KernelSym pKernelSym;$/;"	t	typeref:struct:KernelSym
+pKernelSyms	libzeppoo/zeppoo.h	/^typedef struct KernelSyms pKernelSyms;$/;"	t	typeref:struct:KernelSyms
+pNameBinfmt	libzeppoo/zeppoo.h	/^typedef struct NameBinfmt pNameBinfmt;$/;"	t	typeref:struct:NameBinfmt
+pSops	libzeppoo/zeppoo.h	/^typedef struct Sops pSops;$/;"	t	typeref:struct:Sops
+pSymbol	libzeppoo/zeppoo.h	/^typedef struct Symbol pSymbol;$/;"	t	typeref:struct:Symbol
+pSymbolInfo	libzeppoo/zeppoo.h	/^typedef struct SymbolInfo pSymbolInfo;$/;"	t	typeref:struct:SymbolInfo
+pSyscall	libzeppoo/zeppoo.h	/^typedef struct Syscall pSyscall;$/;"	t	typeref:struct:Syscall
+pTable	libzeppoo/zeppoo.h	/^typedef struct Table pTable;$/;"	t	typeref:struct:Table
+pTask	libzeppoo/zeppoo.h	/^typedef struct Task pTask;$/;"	t	typeref:struct:Task
+pTaskInfo	libzeppoo/zeppoo.h	/^typedef struct TaskInfo pTaskInfo;$/;"	t	typeref:struct:TaskInfo
+pVersion	libzeppoo/zeppoo.h	/^typedef struct Version pVersion;$/;"	t	typeref:struct:Version
+page_max	libzeppoo/zeppoo.h	/^	unsigned long page_max;$/;"	m	struct:global
+page_offset	libzeppoo/zeppoo.h	/^	unsigned long page_offset;$/;"	m	struct:global
+page_offset	libzeppoo/zeppoo.h	/^struct page_offset{$/;"	s
+path	libzeppoo/zeppoo.h	/^	char path[256];$/;"	m	struct:binary
+pid	libzeppoo/zeppoo.h	/^	int pid;$/;"	m	struct:Task
+pid	libzeppoo/zeppoo.h	/^	int pid;$/;"	m	struct:binary
+pid	libzeppoo/zeppoo.h	/^	int pid;$/;"	m	struct:offsets
+pos	libzeppoo/zeppoo.h	/^	int pos;$/;"	m	struct:DescIdt
+pos	libzeppoo/zeppoo.h	/^	int pos;$/;"	m	struct:KernelSyms
+pos	libzeppoo/zeppoo.h	/^	int pos;$/;"	m	struct:Syscall
+prefix	libzeppoo/zeppoo.h	/^	unsigned char prefix;$/;"	m	struct:KernelSym
+proc_root_operations	libzeppoo/zeppoo.h	/^	int proc_root_operations;$/;"	m	struct:symbol
+proc_root_readdir	libzeppoo/zeppoo.h	/^	int proc_root_readdir;$/;"	m	struct:symbol
+protmode	libzeppoo/zeppoo.h	/^int protmode;$/;"	v
+ptr	libzeppoo/zeppoo.h	/^void *ptr;$/;"	v
+ptrace_attach	libzeppoo/binaries.c	/^void ptrace_attach(struct binary *bin){$/;"	f
+ptrace_detach	libzeppoo/binaries.c	/^void ptrace_detach(struct binary *bin){$/;"	f
+ptrace_read	libzeppoo/binaries.c	/^void ptrace_read(struct binary *bin, unsigned long addr, void *buf, size_t size){$/;"	f
+r	libzeppoo/zeppoo.h	/^	int r;$/;"	m	struct:KernelSym
+readkmem	libzeppoo/kmem.c	/^int readkmem(unsigned long offset, void *buf, int size){$/;"	f
+readmem	libzeppoo/mem.c	/^int readmem(unsigned long offset, void *buf, int size){$/;"	f
+realmask	libzeppoo/zeppoo.h	/^        unsigned long realmask;$/;"	m	struct:page_offset
+rec	libzeppoo/zeppoo.h	/^	int rec;$/;"	m	struct:Task
+rel_plt	libzeppoo/zeppoo.h	/^	unsigned long rel_plt;$/;"	m	struct:elf_format
+rel_plt_size	libzeppoo/zeppoo.h	/^	int rel_plt_size;$/;"	m	struct:elf_format
+resolve	libzeppoo/zeppoo.c	/^int resolve(char *file, unsigned long addr, char *name, int size){$/;"	f
+resolve_binfmts_kgeneric	libzeppoo/binaries.c	/^int resolve_binfmts_kgeneric(pTable *linuxformats, char *file){$/;"	f
+resolve_idt_kgeneric	libzeppoo/idt.c	/^int resolve_idt_kgeneric(pTable *myidt, char *file){$/;"	f
+resolve_syscalls_kgeneric	libzeppoo/syscalls.c	/^int resolve_syscalls_kgeneric(pTable *mysyscalls, char *file){$/;"	f
+resolved	libzeppoo/zeppoo.h	/^	int resolved;$/;"	m	struct:KernelSym
+rmask	libzeppoo/zeppoo.h	/^	unsigned long rmask;$/;"	m	struct:page_offset
+rresolve	libzeppoo/zeppoo.c	/^unsigned long rresolve(char *file, char *name){$/;"	f
+sel	libzeppoo/zeppoo.h	/^	unsigned short sel;$/;"	m	struct:__anon2
+simpleViewBinfmt	binaries.c	/^void simpleViewBinfmt(pTable *linuxformats){$/;"	f
+simpleViewIdt	idt.c	/^void simpleViewIdt(pTable *myidt){$/;"	f
+simpleViewSymbols	symbols.c	/^void simpleViewSymbols(pTable *mysymbs){$/;"	f
+simpleViewSyscalls	syscalls.c	/^void simpleViewSyscalls(pTable *mysyscalls){$/;"	f
+simpleViewTasks	tasks.c	/^void simpleViewTasks(pTable *mytasks){$/;"	f
+simpleViewVFS	vfs.c	/^void simpleViewVFS(pTable *myvfs){$/;"	f
+start	libzeppoo/zeppoo.h	/^	unsigned long start;$/;"	m	struct:KernelSym
+status	libzeppoo/zeppoo.h	/^	int status;$/;"	m	struct:binary
+strtab	libzeppoo/zeppoo.h	/^	unsigned long strtab;$/;"	m	struct:elf_format
+struc_size	libzeppoo/symbols.c	/^int struc_size(pKernelSym *ksym) {$/;"	f
+stub_addr	libzeppoo/zeppoo.h	/^	unsigned long stub_addr;$/;"	m	struct:DescIdt
+superblocks_sym	libzeppoo/vfs.c	/^pKernelSym superblocks_sym[] = {$/;"	v
+symbol	libzeppoo/zeppoo.h	/^struct symbol {$/;"	s
+symtab	libzeppoo/zeppoo.h	/^	unsigned long symtab;$/;"	m	struct:elf_format
+sys_call_table	libzeppoo/zeppoo.h	/^	unsigned long sys_call_table;$/;"	m	struct:syscalls
+sys_call_table	libzeppoo/zeppoo.h	/^        unsigned long sys_call_table;$/;"	m	struct:SymbolInfo
+syscalls	libzeppoo/zeppoo.h	/^struct syscalls {$/;"	s
+system_call	libzeppoo/zeppoo.h	/^	unsigned long system_call;$/;"	m	struct:syscalls
+system_call	libzeppoo/zeppoo.h	/^        unsigned long system_call;$/;"	m	struct:SymbolInfo
+tabpage	libzeppoo/mem.c	/^struct page_offset tabpage[] = {$/;"	v	typeref:struct:page_offset
+task	libzeppoo/zeppoo.h	/^struct task {$/;"	s
+uid	libzeppoo/zeppoo.h	/^	int uid;$/;"	m	struct:Task
+uid	libzeppoo/zeppoo.h	/^	int uid;$/;"	m	struct:offsets
+uselkm	libzeppoo/zeppoo.h	/^	int uselkm;$/;"	m	struct:Version
+vAttach	libzeppoo/zeppoo.h	/^	void (*vAttach)(struct binary *);$/;"	m	struct:binaries
+vClose	libzeppoo/zeppoo.h	/^	void (*vClose)(void);$/;"	m	struct:memory
+vDetach	libzeppoo/zeppoo.h	/^	void (*vDetach)(struct binary *);$/;"	m	struct:binaries
+vFindInitTask	libzeppoo/zeppoo.h	/^	unsigned long (*vFindInitTask)(void); $/;"	m	struct:symbol
+vGetBinfmt	libzeppoo/zeppoo.h	/^	void (*vGetBinfmt)(pTask *);$/;"	m	struct:binaries
+vGetBinfmtMd5sum	libzeppoo/zeppoo.h	/^	void (*vGetBinfmtMd5sum)(pBinfmt *);$/;"	m	struct:binaries
+vGetBinfmts	libzeppoo/zeppoo.h	/^	void (*vGetBinfmts)(pTable *);$/;"	m	struct:binaries
+vGetBinfmtsMd5sum	libzeppoo/zeppoo.h	/^	void (*vGetBinfmtsMd5sum)(pTable *);$/;"	m	struct:binaries
+vGetExt3	libzeppoo/zeppoo.h	/^	void (*vGetExt3)(pSops *);$/;"	m	struct:vfs
+vGetIdt	libzeppoo/zeppoo.h	/^	int (*vGetIdt)(pTable *);$/;"	m	struct:idt
+vGetIdtMd5sum	libzeppoo/zeppoo.h	/^	void (*vGetIdtMd5sum)(pDescIdt *, char *, size_t);$/;"	m	struct:idt
+vGetSyscall	libzeppoo/zeppoo.h	/^	unsigned long (*vGetSyscall)(int num);$/;"	m	struct:syscalls
+vGetSyscallMd5sum	libzeppoo/zeppoo.h	/^	void (*vGetSyscallMd5sum)(pSyscall *, char *, size_t);$/;"	m	struct:syscalls
+vGetSyscallTable	libzeppoo/zeppoo.h	/^	unsigned long (*vGetSyscallTable)(void);$/;"	m	struct:syscalls
+vGetSyscalls	libzeppoo/zeppoo.h	/^	int (*vGetSyscalls)(pTable *);$/;"	m	struct:syscalls
+vGetSyscallsOpcodes	libzeppoo/zeppoo.h	/^	void (*vGetSyscallsOpcodes)(pTable *);$/;"	m	struct:syscalls
+vGetTasks	libzeppoo/zeppoo.h	/^	void (*vGetTasks)(pTable *);$/;"	m	struct:task
+vGetVfs	libzeppoo/zeppoo.h	/^	void (*vGetVfs)(pTable *, char *);$/;"	m	struct:vfs
+vGetVfsMd5sum	libzeppoo/zeppoo.h	/^	void (*vGetVfsMd5sum)(pTable *);$/;"	m	struct:vfs
+vInitTaskInfo	libzeppoo/zeppoo.h	/^	void (*vInitTaskInfo)(void);$/;"	m	struct:task
+vLookupRoot	libzeppoo/zeppoo.h	/^	unsigned long (*vLookupRoot)(void);$/;"	m	struct:symbol
+vOpen	libzeppoo/zeppoo.h	/^	void (*vOpen)(void);$/;"	m	struct:memory
+vRead	libzeppoo/zeppoo.h	/^	int (*vRead)(unsigned long, void *, int);$/;"	m	struct:memory
+vRead	libzeppoo/zeppoo.h	/^	void (*vRead)(struct binary *, unsigned long, void *, size_t);$/;"	m	struct:binaries
+vResolveBinfmts	libzeppoo/zeppoo.h	/^	int (*vResolveBinfmts)(pTable *, char *);$/;"	m	struct:binaries
+vResolveIdt	libzeppoo/zeppoo.h	/^	int (*vResolveIdt)(pTable *, char *);$/;"	m	struct:idt
+vResolveSyscalls	libzeppoo/zeppoo.h	/^	int (*vResolveSyscalls)(pTable *, char *);$/;"	m	struct:syscalls
+vWrite	libzeppoo/zeppoo.h	/^	int (*vWrite)(unsigned long, void *, int);$/;"	m	struct:memory
+valmmap	libzeppoo/zeppoo.h	/^int valmmap;$/;"	v
+value	libzeppoo/zeppoo.h	/^	void *value;$/;"	m	struct:Element
+vfs	libzeppoo/zeppoo.h	/^struct vfs {$/;"	s
+viewBinfmt	binaries.c	/^void viewBinfmt(char *file){$/;"	f
+viewCheckTasks	tasks.c	/^void viewCheckTasks(pTable *mytasks){$/;"	f
+viewHiddenTasks	tasks.c	/^void viewHiddenTasks(void){$/;"	f
+viewHijackBinfmt	binaries.c	/^void viewHijackBinfmt(FILE *input, char *file){$/;"	f
+viewHijackIdt	idt.c	/^void viewHijackIdt(FILE *input, char *file){$/;"	f
+viewHijackSymbols	symbols.c	/^void viewHijackSymbols(FILE *input){$/;"	f
+viewHijackSyscalls	syscalls.c	/^void viewHijackSyscalls(FILE *input, char *file){$/;"	f
+viewIdtMemory	idt.c	/^void viewIdtMemory(char *file){$/;"	f
+viewSyscallsMemory	syscalls.c	/^void viewSyscallsMemory(char *file){$/;"	f
+viewTaskMemory	tasks.c	/^void viewTaskMemory(int pid){$/;"	f
+viewTasksMemory	tasks.c	/^void viewTasksMemory(void){$/;"	f
+viewVFS	vfs.c	/^void viewVFS(char *file){$/;"	f
+writeBinfmt	binaries.c	/^void writeBinfmt(FILE *output, char *file){$/;"	f
+writeIdtMemory	idt.c	/^void writeIdtMemory(FILE *output, char *file){$/;"	f
+writeSymbols	symbols.c	/^void writeSymbols(FILE *output, char *file){$/;"	f
+writeSyscallsMemory	syscalls.c	/^void writeSyscallsMemory(FILE *output, char *file){$/;"	f
+writekmem	libzeppoo/kmem.c	/^int writekmem(unsigned long offset, void *buf, int size){$/;"	f
+writemem	libzeppoo/mem.c	/^int writemem(unsigned long offset, void *buf, int size){$/;"	f
+zepbin	libzeppoo/zeppoo.h	/^struct binaries zepbin;$/;"	v	typeref:struct:binaries
+zepglob	libzeppoo/zeppoo.h	/^struct global zepglob;$/;"	v	typeref:struct:global
+zepidt	libzeppoo/zeppoo.h	/^struct idt zepidt;$/;"	v	typeref:struct:idt
+zepmem	libzeppoo/zeppoo.h	/^struct memory zepmem;$/;"	v	typeref:struct:memory
+zeppoo_binary_attach	libzeppoo/binaries.c	/^void zeppoo_binary_attach(struct binary *bin){$/;"	f
+zeppoo_binary_detach	libzeppoo/binaries.c	/^void zeppoo_binary_detach(struct binary *bin){$/;"	f
+zeppoo_binary_read	libzeppoo/binaries.c	/^void zeppoo_binary_read(struct binary *bin, unsigned long addr, void *buf, size_t size){$/;"	f
+zeppoo_close_memory	libzeppoo/memory.c	/^void zeppoo_close_memory(){$/;"	f
+zeppoo_fatal	libzeppoo/zeppoo.c	/^void zeppoo_fatal(const char *fmt, ...){$/;"	f
+zeppoo_find_init_task	libzeppoo/symbols.c	/^unsigned long zeppoo_find_init_task(void){$/;"	f
+zeppoo_find_sym_in_tables	libzeppoo/binaries.c	/^unsigned long zeppoo_find_sym_in_tables(struct binary *bin, char *sym_name){$/;"	f
+zeppoo_fread_memory	libzeppoo/memory.c	/^int zeppoo_fread_memory(unsigned long offset, void *buf, int size){$/;"	f
+zeppoo_fwrite_memory	libzeppoo/memory.c	/^int zeppoo_fwrite_memory(unsigned long offset, void *buf, int size){$/;"	f
+zeppoo_get_binfmt	libzeppoo/binaries.c	/^void zeppoo_get_binfmt(pTask *mytask){$/;"	f
+zeppoo_get_binfmt_md5sum	libzeppoo/binaries.c	/^void zeppoo_get_binfmt_md5sum(pBinfmt *mybin){$/;"	f
+zeppoo_get_binfmts	libzeppoo/binaries.c	/^void zeppoo_get_binfmts(pTable *linuxformats){$/;"	f
+zeppoo_get_binfmts_md5sum	libzeppoo/binaries.c	/^void zeppoo_get_binfmts_md5sum(pTable *mybin){$/;"	f
+zeppoo_get_ext3	libzeppoo/vfs.c	/^void zeppoo_get_ext3(pSops *ext3fs){$/;"	f
+zeppoo_get_idt	libzeppoo/idt.c	/^int zeppoo_get_idt(pTable *myidt){$/;"	f
+zeppoo_get_idt_md5sum	libzeppoo/idt.c	/^void zeppoo_get_idt_md5sum(pDescIdt *myidt, char *buf, size_t size){$/;"	f
+zeppoo_get_symbols	libzeppoo/symbols.c	/^int zeppoo_get_symbols(FILE *output){$/;"	f
+zeppoo_get_syscall	libzeppoo/syscalls.c	/^unsigned long zeppoo_get_syscall(int num){$/;"	f
+zeppoo_get_syscall_md5sum	libzeppoo/syscalls.c	/^void zeppoo_get_syscall_md5sum(pSyscall *mysyscall, char *buf, size_t size){$/;"	f
+zeppoo_get_syscalls	libzeppoo/syscalls.c	/^int zeppoo_get_syscalls(pTable *mysyscalls){$/;"	f
+zeppoo_get_syscalltable	libzeppoo/syscalls.c	/^unsigned long zeppoo_get_syscalltable(void){$/;"	f
+zeppoo_get_task	libzeppoo/tasks.c	/^int zeppoo_get_task(int pid, pTask *rtask){$/;"	f
+zeppoo_get_tasks	libzeppoo/tasks.c	/^void zeppoo_get_tasks(pTable *mytasks){$/;"	f
+zeppoo_get_vfs	libzeppoo/vfs.c	/^void zeppoo_get_vfs(pTable *myvfs, char *file){$/;"	f
+zeppoo_get_vfs_md5sum	libzeppoo/vfs.c	/^void zeppoo_get_vfs_md5sum(pTable *myvfs){$/;"	f
+zeppoo_init	libzeppoo/zeppoo.c	/^void zeppoo_init(void){$/;"	f
+zeppoo_init_binaries	libzeppoo/binaries.c	/^void zeppoo_init_binaries(void){$/;"	f
+zeppoo_init_binaries_trace	libzeppoo/binaries.c	/^void zeppoo_init_binaries_trace(int mode){$/;"	f
+zeppoo_init_idt	libzeppoo/idt.c	/^void zeppoo_init_idt(void){$/;"	f
+zeppoo_init_memory	libzeppoo/memory.c	/^void zeppoo_init_memory(char *device, int mode, int val){$/;"	f
+zeppoo_init_symb	libzeppoo/symbols.c	/^void zeppoo_init_symb(void){$/;"	f
+zeppoo_init_syscalls	libzeppoo/syscalls.c	/^void zeppoo_init_syscalls(void){$/;"	f
+zeppoo_init_taskInfo	libzeppoo/tasks.c	/^void zeppoo_init_taskInfo(void){$/;"	f
+zeppoo_init_tasks	libzeppoo/tasks.c	/^void zeppoo_init_tasks(void){$/;"	f
+zeppoo_init_version	libzeppoo/version.c	/^void zeppoo_init_version(int uselkm){$/;"	f
+zeppoo_init_vfs	libzeppoo/vfs.c	/^void zeppoo_init_vfs(void){$/;"	f
+zeppoo_locate_linkmap	libzeppoo/binaries.c	/^void zeppoo_locate_linkmap(struct binary *bin){$/;"	f
+zeppoo_lookup_root	libzeppoo/symbols.c	/^unsigned long zeppoo_lookup_root(){$/;"	f
+zeppoo_open_memory	libzeppoo/memory.c	/^void zeppoo_open_memory(){$/;"	f
+zeppoo_read_memory	libzeppoo/memory.c	/^int zeppoo_read_memory(unsigned long offset, void *buf, int size){$/;"	f
+zeppoo_resolv_tables	libzeppoo/binaries.c	/^void zeppoo_resolv_tables(struct binary *bin){$/;"	f
+zeppoo_resolve_binfmts	libzeppoo/binaries.c	/^int zeppoo_resolve_binfmts(pTable *linuxformats, char *file){$/;"	f
+zeppoo_resolve_idt	libzeppoo/idt.c	/^int zeppoo_resolve_idt(pTable *myidt, char *file){$/;"	f
+zeppoo_resolve_listsymbols	libzeppoo/symbols.c	/^void zeppoo_resolve_listsymbols(pKernelSyms *listKernelSyms){$/;"	f
+zeppoo_resolve_syscalls	libzeppoo/syscalls.c	/^int zeppoo_resolve_syscalls(pTable *mysyscalls, char *file){$/;"	f
+zeppoo_search_jmp	libzeppoo/zeppoo.c	/^int zeppoo_search_jmp(unsigned long addr){$/;"	f
+zeppoo_valid_addr	libzeppoo/zeppoo.c	/^int zeppoo_valid_addr(unsigned long addr){$/;"	f
+zeppoo_walk_krstab	libzeppoo/symbols.c	/^unsigned long zeppoo_walk_krstab(char *symbol, void *base, int size){$/;"	f
+zeppoo_walk_tree	libzeppoo/symbols.c	/^unsigned long zeppoo_walk_tree(pKernelSym *ksym){$/;"	f
+zeppoo_write_memory	libzeppoo/memory.c	/^int zeppoo_write_memory(unsigned long offset, void *buf, int size){$/;"	f
+zepsymb	libzeppoo/zeppoo.h	/^struct symbol zepsymb;$/;"	v	typeref:struct:symbol
+zepsymbolinfo	libzeppoo/zeppoo.h	/^pSymbolInfo zepsymbolinfo;$/;"	v
+zepsyscalls	libzeppoo/zeppoo.h	/^struct syscalls zepsyscalls;$/;"	v	typeref:struct:syscalls
+zeptaskinfo	libzeppoo/zeppoo.h	/^pTaskInfo zeptaskinfo;$/;"	v
+zeptasks	libzeppoo/zeppoo.h	/^struct task zeptasks;$/;"	v	typeref:struct:task
+zepversion	libzeppoo/zeppoo.h	/^pVersion zepversion;$/;"	v
+zepvfs	libzeppoo/zeppoo.h	/^struct vfs zepvfs;$/;"	v	typeref:struct:vfs

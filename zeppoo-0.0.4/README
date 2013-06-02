@@ -1,0 +1,142 @@
+------[ I INTRODUCTION ]-------------------------------------------------------
+
+Zeppoo allows you to detect rootkits on the i386 and x86_64 architecture under 
+Linux by using /dev/kmem and /dev/mem. It can also detect hidden tasks, modules,
+syscalls, some corrupted symbols, and hidden connections.
+Anti-Rootkits which don't use these methods can be fooled easily.
+
+This version of Zeppoo 0.0.4 is a beta release and available on our website :
+                http://www.zeppoo.net
+
+------[ II INSTALLATION ]------------------------------------------------------
+
+I386 :
+	Compile :
+		make 
+
+X86_64 :
+	Compile :
+		make AMD64=yes
+
+
+For people who do not like shared library :
+	make static 
+
+------[ III USE ]--------------------------------------------------------------
+
+Zeppoo is not installed by default. Why ? Because if the system is broken, it
+can be hijacked easily. So Zeppoo must be used and present in the hard disk
+when you need it. Otherwise you can delete it.
+
+** WARNING **
+Each time you changed kernel, you must remake the fingerprint.
+
+The classic use of Zeppoo can be resume in 2 steps :
+
+	* Generating the fingerprint => ./zeppoo -f FP
+        * Checking the system => ./zeppoo -z FP
+
+
+The fingerprint FP is few importants states of the system and it must be save 
+in a secure place(usb key, etc) and/or encrypted. 
+You can save the System.map in the same place as the fingerprint.
+
+Zeppoo reports the mistakes which have found. But for advances users you can
+play with others options.
+
+For more help, check the wiki : http://wiki.zeppoo.net
+
+To simplify the use of zeppoo, a tool written in python is available at this
+	url : http://www.zeppoo.net/download/zeppoo-knife.tar.gz
+
+We provide zeppoo's binaries of svn snapshot to avoid compilation.
+i386 : http://www.zeppoo.net/download/zeppoo-x86-binary-snapshot.tar.gz  
+x86_64 : http://www.zeppoo.net/download/zeppoo-x86_64-binary-snapshot.tar.gz
+
+------[ IV OPTIONS ]-----------------------------------------------------------
+
+* GENERAL :
+	-z FILE : check all the system
+
+* TASKS :
+	-p : display tasks in memory
+
+* SYSCALLS :
+	-s : display syscalls
+
+* IDT :
+	-i : display idt
+
+* SYMBOLS :
+	-x : display symbols
+
+* FINGERPRINTS :
+	-f FILE : generate a fingerprint(syscalls, idt, symbols)
+
+* OTHERS :
+	-c OPTIONS : check tasks, networks, fingerprints
+	-d DEVICE : use device(/dev/mem, /dev/kmem) 
+	-r : patch the kernel(must be used for REDHAT, UBUNTU and the option 
+	     -d /dev/mem -m)
+	-m : more portable/quick 
+	-t SYSTEMMAP : specify System.map to resolve name of syscalls and idt
+
+
+AMD64 users :
+	- you must use "-d /dev/mem -m" options, the kmem device is not
+	  supported for now.
+	  
+Redhat, Ubuntu users with a default kernel :
+	- you must use "-r -d /dev/mem -m" options to permit zeppoo's work.
+	
+------[ V EXEMPLES ]-----------------------------------------------------------
+
+	** Check the system with a specific fingerprint :
+		./zeppoo -z FP
+		
+	** Visualization of tasks by /dev/mem :
+		./zeppoo -p -d /dev/mem
+
+	** Check and visualization of hidden tasks : 
+		./zeppoo -c -p
+		
+	** Visualization names of idt with a specific System.map :
+	 	./zeppoo -i -t /boot/System.map-2.6.16
+	
+	** Visualization of symbols with -m option:
+		./zeppoo -x -d /dev/mem -m
+
+	** Make classic fingerprint :
+		./zeppoo -f FP
+	
+	** Make classic fingerprint on redhat, ubuntu kernel :
+		./zeppoo -r -f FP
+
+	** Check and visualization of fingerprint using /dev/mem :
+		./zeppoo -c -f FP -d /dev/kmem
+	
+	** Check fingerprint using /dev/mem, mmap and a specific System.map :
+		./zeppoo -c -f FP -d /dev/kmem -t /boot/System.map-2.6.16
+
+	** Visualization of tasks by /dev/mem with mmap(use it if that don't
+	   work with normal option) :
+	   	./zeppoo -p -d /dev/mem -m
+
+------[ CONTACTS ]--------------------------------------------------------------
+
+For any request for assistance concerning the software, to propose your patches,
+to contribute to the TODO, write us <contact@zeppoo.net>
+
+Come to visit the site http://www.zeppoo.net and our blog http://blog.zeppoo.net
+
+------[ LICENSE ]---------------------------------------------------------------
+
+Zeppoo is under license GPL version 2, see COPYING
+
+------[ AUTHORS ]--------------------------------------------------------------
+
+See AUTHORS
+
+------[ BUGS ]-----------------------------------------------------------------
+
+Report bugs at <bugs@zeppoo.net>.
